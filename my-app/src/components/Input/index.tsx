@@ -4,15 +4,16 @@ import { InputLogin, TituloInput, Container } from "./style";
 type InputProps = {
 
     Title: string
+    secure: boolean
 }
-export default function Input({Title}: InputProps) {
+export default function Input({ Title, secure }: InputProps) {
 
     return(
 
         <Container>
 
             <TituloInput>{Title}</TituloInput>
-            <InputLogin keyboardType="numeric"></InputLogin>
+            <InputLogin keyboardType="default" secureTextEntry={secure}></InputLogin>
         
         </Container>
     );
