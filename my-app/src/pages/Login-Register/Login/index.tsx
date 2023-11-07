@@ -1,5 +1,4 @@
-import { TouchableHighlight, Text } from "react-native"
-import { Container, Btn, Texto, TituloPage, BtnEntrar } from "./style";  
+import { Container, DivBtn, Btn, BtnTexto, Texto, DivInput, TituloPage, BtnEntrar, BtnEntrarTexto } from "./style";  
 import Input from "../../../components/Input";
 
 export default function Login({ navigation }: { navigation: any}) {
@@ -10,19 +9,27 @@ export default function Login({ navigation }: { navigation: any}) {
 
             <TituloPage>Login</TituloPage>
 
-            <Input Title="Email" secure={false} />
-            <Input Title="Senha" secure={true} />
-            <Texto>Esqueceu a senha?</Texto>
+            <DivInput>
 
-            <BtnEntrar>
-                
-                <Texto>Entrar</Texto>
+                <Input Title="Email" secure={false} />
+                <Input Title="Senha" secure={true} />
+                <Texto>Esqueceu a senha?</Texto>
 
-            </BtnEntrar>
+                <BtnEntrar onPress={ () => { navigation.navigate("Registrar") } }>
+                        
+                    <BtnEntrarTexto>Entrar</BtnEntrarTexto>
 
-            <Btn onPress={() => { navigation.navigate("Registrar") }}>
-                <Texto>Click</Texto>
-            </Btn>
+                </BtnEntrar>
+
+            </DivInput>
+
+            <DivBtn>
+
+                <Btn onPress={() => { navigation.navigate("Registrar") }}>
+                    <BtnTexto>Registrar</BtnTexto>
+                </Btn>
+
+            </DivBtn>
         </Container>
     );
 }
