@@ -25,7 +25,7 @@ export default function Login({ navigation }: { navigation: any}) {
 
             <DivBtn>
 
-                <Btn onPress={() => { navigation.navigate("Registrar") }}>
+                <Btn onPress={() => { navigation.navigate("Profile") }}>
                     <BtnTexto>Registrar</BtnTexto>
                 </Btn>
 

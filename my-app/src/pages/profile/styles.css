@@ -1,0 +1,87 @@
+/*Header*/
+body {
+  font-family: sans-serif;
+  background-color: #f0f2f5;
+}
+#parentePic {
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+}
+#SetaVoltar {
+  position: relative;
+  width: 20px;
+  height: 18px;
+  border: none;
+}
+#SetaVoltar:active {
+  background-color: #cfcfcf;
+}
+#SetaVoltar img {
+  width: 65px;
+  position: relative;
+  bottom: 25px;
+  right: 29px;
+}
+
+#ProfilePic {
+  position: relative;
+  bottom: 40px;
+  width: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+}
+
+/*Infos*/
+#InfoMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.secaoInfo {
+  display: flex;
+  width: 100%;
+  font-size: 0.65rem;
+  align-items: center;
+}
+.secaoInfo:active {
+  background-color: #cfcfcf;
+}
+.setaPreta {
+  width: 15px;
+  margin-left: 10px;
+}
+.textoInfoLabel {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+/*footer*/
+#deleteAccount {
+  border: none;
+  outline: none;
+  background-color: #ff5d29;
+  width: 100%;
+  height: 35px;
+  position: relative;
+  top: 128px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+#deleteAccount:active {
+  background-color: #cfcfcf;
+}
