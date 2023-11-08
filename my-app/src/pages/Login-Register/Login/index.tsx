@@ -15,7 +15,7 @@ export default function Login({ navigation }: { navigation: any}) {
                 <Input Title="Senha" secure={true} />
                 <Texto>Esqueceu a senha?</Texto>
 
-                <BtnEntrar onPress={ () => { navigation.navigate("Registrar") } }>
+                <BtnEntrar onPress={ () => { navigation.navigate("Home") } }>
                         
                     <BtnEntrarTexto>Entrar</BtnEntrarTexto>
 
@@ -25,7 +25,7 @@ export default function Login({ navigation }: { navigation: any}) {
 
             <DivBtn>
 
-                <Btn onPress={() => { navigation.navigate("Profile") }}>
+                <Btn onPress={() => { navigation.navigate("Registrar") }}>
                     <BtnTexto>Registrar</BtnTexto>
                 </Btn>
 

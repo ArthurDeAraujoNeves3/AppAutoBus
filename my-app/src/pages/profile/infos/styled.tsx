@@ -8,14 +8,17 @@ export const InfoMain = styled.View`
     bottom: 50px;
     background-color: #fff;
     border-radius: 8px;
+    margin-top: 100px;
+    padding: 10px;
 `;
 export const SecaoInfo = styled.View`
 
     display: flex;
+    margin-left: auto;
     align-items: center;
+    flex-direction: row;
     width: 100%;
     font-size: 0.65rem;
-    align-items: center;
 `;
 export const Div = styled.View`
 

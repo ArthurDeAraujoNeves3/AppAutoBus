@@ -5,6 +5,7 @@ import { CardStyleInterpolators, createStackNavigator} from '@react-navigation/s
 const Stack = createStackNavigator();
 import Login from "../pages/Login-Register/Login/index";
 import Registrar from "../pages/Login-Register/Register/index";
+import Home from '../pages/home';
 import Profile from '../pages/profile';
 
 export default function Router() {
@@ -16,6 +17,7 @@ export default function Router() {
             <Stack.Navigator initialRouteName="Login" screenOptions={ { headerShown: false, cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS } }>
                 <Stack.Screen name="Login" component={Login}/>
                 <Stack.Screen name="Registrar" component={Registrar}/>
+                <Stack.Screen name="Home" component={Home}/>
                 <Stack.Screen name="Profile" component={Profile}/>
             </Stack.Navigator>
 

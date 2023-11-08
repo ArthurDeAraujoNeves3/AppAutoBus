@@ -16,7 +16,7 @@ export default function Register({ navigation }: { navigation: any}) {
                 <Input Title="Senha" secure={true} />
                 <Texto>Esqueceu a senha?</Texto>
 
-                <BtnEntrar onPress={ () => { navigation.navigate("Login") } }>
+                <BtnEntrar onPress={ () => { navigation.navigate("Home") } }>
                         
                     <BtnEntrarTexto>Registrar</BtnEntrarTexto>
 

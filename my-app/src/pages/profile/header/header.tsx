@@ -1,13 +1,15 @@
+import { Container, Nome, Btn, DivImg, ImgSeta, Img } from "./styled";
+
 export default function Header() {
   return (
-    <header>
-      <button id="SetaVoltar">
-        <img src={require("../assets/icons/seta.png")} />
-      </button>
-      <div id="parentePic">
-        <img src={require("../assets/img/profile/Pfp.png")} id="ProfilePic" />
-      </div>
-      <h1>Arthur de Araujo Neves</h1>
-    </header>
+    <Container>
+      <Btn>
+        <ImgSeta source={require("../../../assets/icons/seta.png")} />
+      </Btn>
+      <DivImg>
+        <Img source={require("../../../assets/img/profile/Pfp.png")}/>
+      </DivImg>
+      <Nome>Arthur de Araujo Neves</Nome>
+    </Container>
   );
 }

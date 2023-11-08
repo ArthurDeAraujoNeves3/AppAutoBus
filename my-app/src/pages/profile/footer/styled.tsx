@@ -2,17 +2,18 @@ import styled from "styled-components/native";
 
 export const BtnExcluir = styled.TouchableOpacity`
 
-    border: none;
-    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ff5d29;
     width: 100%;
-    height: 35px;
-    position: relative;
-    top: 128px;
-    border-radius: 5px;
-    
+    border-radius: 10px;
 `;
 export const BtnExcluirTexto = styled.Text`
 
     color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px 0px;
 `;
